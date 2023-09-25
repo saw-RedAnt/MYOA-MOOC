@@ -26,6 +26,15 @@ section {
     width: calc(100% - 400px);
     left: 400px;
 }
+
+/*Chat Area*/
+#chat-area{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
 /* APP BAR */
 
 .headbar {
@@ -131,10 +140,17 @@ flex: 1 1 auto;
     width: 75%;
 }
 
+.message-wrapper{
+    display: flex;
+    align-items: flex-end;
+
+}
+
 .message-content {
     padding: 11px;
     margin: 10px 11px;
     text-align: left;
+    border-radius: 15px 15px 5px 15px;
 }
 
 .message-content h3 {
@@ -145,8 +161,12 @@ flex: 1 1 auto;
 
 .message-content p {
     font-size: 14px;
+    
 }
-
+.outgoing-message{
+    align-self: flex-end;
+    text-align: left;
+}
 .incoming-message .message-content {
     background-color: #eeeeee;
 }
@@ -160,6 +180,8 @@ flex: 1 1 auto;
     font-size: 12px;
     color: #666666;
 }
+
+
 
 /* MESSAGE-BUTTONS */
 

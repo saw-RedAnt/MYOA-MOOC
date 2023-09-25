@@ -10,6 +10,8 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -20,14 +22,18 @@
                     chatter | app       
                 </h1>
         </div>
+        <a class="fab" href=""> + </a>
+        <!--Channel-View Starts-->
         <div>
             <h2>Favorites</h2>
             <ul class="channel-list">
                 <li class="selected">
+                    <i class="material-icons">group</i>
                     <span class="channel-name">MeetUp</span>
                     <span class="timestamp">11:51</span>
                 </li>
                 <li>
+                    <i class="material-icons">group</i>
                     <span class="channel-name">Oktoberfest</span>
                     <span class="timestamp">10:51</span>
                 </li>
@@ -36,23 +42,27 @@
             <h2>Regular</h2>
             <ul class="channel-list">
                 <li>
+                    <i class="material-icons">group</i>
                     <span class="channel-name">WeatherChannel</span>
                     <span class="timestamp">Yesterday</span>
                 </li>
                 <li>
+                    <i class="material-icons">group</i>
                     <span class="channel-name">SevenContinents</span>
                     <span class="timestamp">23 May 2018</span>
                 </li>
             </ul>
         </div>
+        <!--Channel-View Ends -->
     </section>
 
     <!-- chat area -->
     <section id="message-area">
         <div class="headbar"> 
             <h1>MeetUp</h1>
-            <button>Favorite</button>
+            <a id="favorite-button" href="#"><i class="material-icons">favorite</i></a>
         </div>
+        
         <div id="chat-area">
             <div class="message incoming-message">
                 <div class="message-content">

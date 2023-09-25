@@ -34,6 +34,8 @@ section {
     height: 66px;
     line-height: 66px;
     padding: 0px 22px 0px 22px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .headbar img {
@@ -61,6 +63,24 @@ h1 {
     border-radius: 10%;
 }
 
+.fab{
+    width: 44px;
+height: 44px;
+background-color: #00838f;
+border-radius: 50%;
+box-shadow: 0 2px 5px 0 #aaaaaa;
+
+font-size: 36px;
+color: white;
+text-align: center;
+line-height: 44px;
+
+position: absolute;
+top: 44px;
+right: 22px;
+
+cursor: pointer;
+}
 
 /* CHANNELS LIST */
 
@@ -84,11 +104,23 @@ h2 {
     box-sizing: border-box;
     padding: 22px;
     height: 66px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
 }
 
 .channel-list li.selected {
     background-color: #eeeeee;
     border-right: 3px solid #00838f;
+}
+
+.channel-name{
+    font-size: 16px;
+margin: 0px 22px;
+text-overflow: ellipsis;
+overflow: hidden;
+flex: 1 1 auto;
 }
 
 /* MESSAGES */

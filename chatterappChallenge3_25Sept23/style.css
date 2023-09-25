@@ -42,6 +42,7 @@ section {
 
 #app-title {
     color: #00838f;
+    margin-left: 40px;
 }
 
 h1 {
@@ -54,6 +55,10 @@ h1 {
 
 #logo {
     height: 44px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 10%;
 }
 
 
